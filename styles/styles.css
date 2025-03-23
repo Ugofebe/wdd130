@@ -1,4 +1,7 @@
 /* This is a comment */
+:root {
+  --border-standard: 1px;
+}
 nav {
   background-color: #00008b;
   padding: 10px;
@@ -14,9 +17,9 @@ nav a {
   main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 2px; 
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px #808080;
   }
   p {padding: 0;} 
   main {
@@ -25,7 +28,7 @@ nav a {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+    border: var(--border-standard) solid rgb(0 0 0 / 0.2); /* 1️⃣ */
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -37,6 +40,6 @@ aside {
   }
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border-standard) solid #000;
     text-align: center;
   }
