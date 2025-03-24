@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #0077C0;
+	--secondary-color: #003049;
+	--accent1-color: #FDF0D5;
+	--accent2-color: #C1121F;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+
+/* Apply styles to headings */
+
+h2, h3 {
+    color: var(--black);
+    font-family: 'Boldonse', sans-serif;
+}
+
+/* Style paragraph text */
+p {
+    color: var(--black);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Remove underline from social media image links */
+a {
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    font-family: 'Boldonse', sans-serif;
+}
+
+.hero p {
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Style the article to position over the background */
+.hero article {
+    /* position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Moves the element back by half its own width & height */
+    width: 60%;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center; /* Centers text content */
+}
+
+/* Float profile image to the right */
+.hero article img {
+    float: right;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: 3px solid white; /* Adds a nice contrast */
+}
+
+
+
+
+
+
