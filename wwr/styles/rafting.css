@@ -16,6 +16,9 @@ h2, h3 {
 }
 
 /* Style paragraph text */
+body {
+    font-family: 'Roboto', sans-serif;
+}
 p {
     color: var(--black);
     font-family: "Roboto", sans-serif;
