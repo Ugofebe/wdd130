@@ -97,14 +97,39 @@ a {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-around; 
+    background-color: var(--primary-color);
 
 }
 nav {
     padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: ;
     align-items: center;
+      
 }
+
+header img {
+    width: 80px;  /* Adjust the width of the logo */
+    margin-left: 60px; /* Adds some space between the logo and the left side */
+    margin-top: 20px;  /* Adds space at the top of the logo */
+    margin-bottom: 20px;  /* Adds space at the bottom of the logo */
+    height: auto;
+}
+nav a {
+    display: inline-block;       /* Makes the links behave like boxes */
+    padding: 10px 15px;          /* Adds space inside the box */
+    margin: 0px;                 /* Adds space between the boxes */
+    border: 1px solid #333;      /* Creates the border around the link */
+    border-radius: 0px;          /* Optional: rounded corners */
+    text-decoration: none;       /* Removes underline */
+    color: #000;                 /* Link text color */
+    background-color: var(--white);   /* Optional: light background */
+    transition: background 0.3s; /* Smooth hover effect */
+  }
+  header nav a:hover {
+    background-color: var(--secondary-color)      /* Change background on hover */
+  }
 h2 {
     display: flex;
     justify-content: center; /* Centers horizontally */
