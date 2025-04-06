@@ -125,11 +125,10 @@ nav a {
     text-decoration: none;       /* Removes underline */
     color: #000;                 /* Link text color */
     background-color: var(--white);   /* Optional: light background */
-    transition: background 0.3s; /* Smooth hover effect */
-  }
-  header nav a:hover {
+}
+header nav a:hover {
     background-color: var(--secondary-color)      /* Change background on hover */
-  }
+}
 h2 {
     display: flex;
     justify-content: center; /* Centers horizontally */
