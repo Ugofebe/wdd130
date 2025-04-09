@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0077C0;
-	--secondary-color: #003049;
-	--accent1-color: #FDF0D5;
+	--secondary-color: #FDF0D5;
+	--accent1-color: #003049;
 	--accent2-color: #C1121F;
     --black: #000000;
     --white: #ffffff;
@@ -162,7 +162,7 @@ footer {
     justify-content: space-between; /* Spaces elements to left & right */
     align-items: center; /* Aligns items vertically */
     padding: 10px 20px; /* Adds padding */
-    background-color: #003049; /* Adjust as needed */
+    background-color: var(--primary-color); /* Adjust as needed */
     color: white;
 }
 
@@ -183,6 +183,71 @@ footer p {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Contact Page Styling */
+.contact-info, .contact-form, .employees {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+}
+
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.employees figure {
+    text-align: center;
+    margin: 1rem;
+}
+
+.employees img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+}
 
 
 
