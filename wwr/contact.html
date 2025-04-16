@@ -10,9 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto&display=swap" rel="stylesheet">
     <title>Elite Rapids Rafting Co. | Contact Us</title>
 </head>
 <body>
@@ -26,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <h2>Contact Us</h2>
+        <h1>Contact Us – Elite Rapids Rafting</h1>
       
         <section class="contact-info">
           <h3>Company Info</h3>
@@ -36,9 +33,14 @@
       
           <div class="map">
             <iframe
+              class="google-map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d848321.5609019941!2d-84.47420299999999!3d33.8444001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1744219334290!5m2!1sen!2sus" 
-              width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              width="800" height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+
           </div>
         </section>
       
@@ -68,14 +70,14 @@
             <input type="email" id="email" name="email" required>
       
             <p>Purpose of Message:</p>
-            <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
-            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-            <label><input type="radio" name="purpose" value="website"> Website Suggestion</label><br>
-      
+            <label for="general"><input type="radio" id="general" name="purpose" value="general"> General Inquiry</label><br>
+            <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label><br>
+            <label for="website"><input type="radio" id="website" name="purpose" value="website"> Website Suggestion</label><br>
+
             <label for="message">Your Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
       
-            <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label><br>
+            <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter</label><br>
       
             <button type="submit">Send Message</button>
           </form>
